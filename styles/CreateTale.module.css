@@ -1,0 +1,100 @@
+.createTaleContainer {
+  padding: 20px 80px;
+}
+
+.createTaleContainer h2 {
+  color: #00171f;
+
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.selectGenreContainer p {
+  font-size: 30px;
+  font-weight: 600;
+  color: #007ea7;
+}
+
+.selectGenreContainer p span {
+  font-size: 30px;
+  font-weight: 600;
+  color: #00171f;
+}
+
+.selectGenreContainer h5 {
+  font-size: 15px;
+}
+
+.buttonHolder {
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buttonHolder button {
+  background-color: #007ea7;
+  color: white;
+  width: 150px;
+  border: none;
+  padding: 10px 17px;
+  margin: 4px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttonHolder button:hover {
+  background-color: #00171f;
+}
+
+.taleNameAndDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.taleNameAndDescriptionContainer h3 {
+  font-size: 30px;
+  color: #00171f;
+}
+
+.nameInput {
+  outline: none;
+  border: none;
+  width: 35%;
+  background-color: #e5e5e5;
+  color: #00171f;
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.taleNameAndDescriptionContainer p {
+  color: #00171f;
+  font-size: 18px;
+}
+
+.descriptionInput {
+  outline: none;
+  border: none;
+  width: 90%;
+  background-color: #e5e5e5;
+  color: #00171f;
+  font-size: 16px;
+  padding: 8px 10px;
+}
+
+.taleNameAndDescriptionContainer button {
+  width: 150px;
+  background-color: #007ea7;
+  color: white;
+  border: none;
+  font-size: 22px;
+  padding: 10px 6px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.taleNameAndDescriptionContainer button:hover {
+  background-color: #021b23;
+}

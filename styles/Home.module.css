@@ -1,129 +1,177 @@
-.container {
-  padding: 0 2rem;
+.HomeContainer {
+  width: 100%;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.heroSection {
+  display: flex;
+}
+
+.heroSection .left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
+  width: 50%;
 }
 
-.footer {
+.heroSection .left div {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
+.heroSection .left div h2 {
+  font-size: 40px;
+  text-align: center;
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  padding: 0;
 }
 
-.title,
-.description {
+.heroSection .left div p {
+  font-size: 50px;
+  text-align: right;
+  color: #00a7e1;
+  margin: 0;
+  padding: 0;
+}
+
+.heroSection .right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.heroSection .right .one {
+  width: 70%;
+}
+
+.heroImage {
+  margin-top: 25px;
+  margin-left: 200px;
+  width: 60%;
+  height: auto;
+}
+
+.heroSection .right {
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+.heroSection .right .one {
+  padding: 20px 10px;
+  text-align: right;
+  width: 80%;
+}
+
+.heroSection .right .two {
+  padding: 20px 10px;
+  text-align: left;
+  width: 80%;
+}
+
+.heroButton {
+  text-decoration: none;
+  background-color: #003459;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: white;
+  border-radius: 3px;
+}
+
+.heroButton:hover {
+  background-color: #00a7e1;
+}
+
+.newTalesSection {
+  /* margin-top: 80px; */
+  background-color: #00171f;
+  width: 100%;
+  padding-bottom: 70px;
+}
+
+.titleName {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 70px;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.titleName h3 {
+  font-size: 35px;
+  padding: 10px 15px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.titleName .viewAllNewTalesLink {
+  font-size: 20px;
+  color: #00a7e1;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.viewAllNewTalesLink:hover {
+  color: #fff;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.taleBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  padding: 6px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.QuestionSection {
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.leftHeader {
+  color: #00a7e1;
+  font-size: 45px;
+  font-weight: 800;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.leftButton {
+  background-color: #003459;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 24px;
+  border: none;
+  width: 300px;
+  text-align: center;
+  font-weight: 900;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.rightHeader {
+  color: #00171f;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.rightButton {
+  background-color: #00a7e1;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 24px;
+  border: none;
+  width: 200px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.rightHeaderAndButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.leftHeaderAndButtonContainer {
+  display: flex;
+  flex-direction: column;
 }

@@ -1,10 +1,11 @@
-html,
+/* html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 0px 0px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+  background-color: #e6f8ff;
+} */
 
 a {
   color: inherit;
@@ -15,6 +16,10 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +28,203 @@ a {
     color: white;
     background: black;
   }
+}
+
+.taleImage {
+  width: 500px;
+  height: 500px;
+}
+
+.taleDetailsContainer {
+  padding: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailsWritingContainer {
+  padding: 50px;
+}
+
+/* DROP CHAPTER */
+
+.dropChapterContainer {
+  padding: 20px 80px;
+}
+
+.dropChapterContainer h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #00a7e1;
+}
+
+.dropChapterContainer h3 {
+  color: #003459;
+  font-size: 25px;
+}
+
+.dropChapterContainer span {
+  color: #007ea7;
+}
+
+.dropChapterContainer input {
+  outline: none;
+  border: none;
+  width: 35%;
+  background-color: #e5e5e5;
+  color: #00171f;
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.dropChapterContainer textarea {
+  outline: none;
+  border: none;
+  width: 80%;
+  background-color: #e5e5e5;
+  color: #00171f;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.uploadButton {
+  background-color: #003459;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  display: block;
+  margin: 20px 0px;
+}
+
+.uploadButton:hover {
+  background-color: #00a7e1;
+}
+
+.dropChapterButton {
+  background-color: #00a7e1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  display: block;
+  margin: 20px 0px;
+}
+
+.dropChapterButton:hover {
+  background-color: #003459;
+}
+
+.taleDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.taleDetailsStateImage {
+  width: 35%;
+  height: 35%;
+  padding: 0px 30px;
+}
+
+.taleDetaillsWriting h2 {
+  color: #00a7e1;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.taleDetaillsWriting h3 {
+  color: #004258;
+  font-size: 20px;
+}
+
+.taleDetaillsWriting h4 {
+  color: #00171f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.taleDetaillsWriting button {
+  /* display: block; */
+  background-color: #004258;
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+  border: none;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.getChapterFromNumber h2 {
+  text-align: center;
+  color: #007ea7;
+  font-size: 38px;
+}
+
+.getChapterFromNumberHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.getChapterFromNumberHeader input {
+  outline: none;
+  border: none;
+  width: 100px;
+  background-color: #e5e5e5;
+  color: #676767;
+  padding: 12px 22px;
+  font-size: 18px;
+}
+
+.getChapterFromNumberHeader button {
+  border: none;
+  background-color: #00a7e1;
+  color: white;
+  padding: 12px 22px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+.getChapterFromNumberHeader button:hover {
+  background-color: #003459;
+}
+
+.mintChapterButton {
+  border: none;
+  background-color: #00a7e1;
+  color: white;
+  padding: 12px 22px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.mintChapterButton:hover {
+  background-color: #04789f;
+}
+
+.viewChapterButton {
+  border: none;
+  background-color: #00171f;
+  color: white;
+  padding: 12px 22px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.viewChapterButton:hover {
+  background-color: #007ea7;
 }

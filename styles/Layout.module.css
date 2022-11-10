@@ -1,0 +1,90 @@
+.LayoutContainer {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  height: 50px;
+}
+
+.navLinkContainer a {
+  color: #007ea7;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navLinkContainer a:hover {
+  font-weight: bold;
+}
+
+.connectButton {
+  background-color: #007ea7;
+  border: none;
+  padding: 9px 18px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  /* border-radius: 3px; */
+  margin-left: 5px;
+}
+
+.connectButton:hover {
+  background-color: #00a7e1;
+  color: #fff;
+}
+
+.footer {
+  background-color: #00171f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+  color: white;
+  padding: 30px 0px;
+}
+
+.footerFirstDiv h5 {
+  color: #003459;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footerFirstDiv p {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 15px 0px;
+  margin: 0;
+}
+
+.footerSecondDiv {
+  display: flex;
+}
+
+.footerLinkOne {
+  color: #003459;
+  padding: 10px;
+}
+
+.footerLinkTwo {
+  color: white;
+  padding: 10px;
+}
+
+.footerLinkThree {
+  color: #00a7e1;
+  padding: 10px;
+}

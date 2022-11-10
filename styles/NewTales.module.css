@@ -1,0 +1,25 @@
+.newTalesContainer {
+}
+
+.newTalesContainer h3 {
+  text-align: center;
+  font-size: 60px;
+  color: #007ea7;
+}
+
+.taleBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.taleBoxContainer h4 {
+  color: #007ea7;
+}
+
+.taleBoxContainer p {
+  color: #007ea7;
+}

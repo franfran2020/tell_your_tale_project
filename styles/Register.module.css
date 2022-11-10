@@ -1,0 +1,58 @@
+.registerContainer {
+  padding: 60px 60px;
+}
+
+.registerHeader {
+  color: #00171f;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.registerSignUpSection h4 {
+  color: #00a7e1;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.registerSignUpSection p {
+  color: #00171f;
+  font-size: 18px;
+}
+
+.registerSignUpSection input {
+  outline: none;
+  border: none;
+  width: 35%;
+  background-color: #e5e5e5;
+  color: #00171f;
+  padding: 5px 10px;
+  font-size: 22px;
+}
+
+.registerContainer {
+  color: #00a7e1;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.registerSignUpSection button {
+  border: none;
+  background-color: #00a7e1;
+  color: white;
+  padding: 12px 22px;
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.registerNote {
+  font-size: 20px;
+}
+
+.registerNote span {
+  color: red;
+  font-size: 24px;
+  font-weight: 600;
+}
