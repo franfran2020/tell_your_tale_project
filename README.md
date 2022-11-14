@@ -35,8 +35,8 @@ The following improvements weren't made because of lack of time for the hackatho
 
 Here are some of the links that you might find helpful when exploring tell your tale
 
-1. The Link to the smart contract repository -
-2. The Link to the sungraph repository -
-3. The Link to the frontend repository -
+1. The Link to the smart contract repository - https://github.com/franfran20/tell_your_tale_contract.git
+2. The Link to the subgraph repository - https://github.com/franfran20/tell_your_tale_subgraph
+3. The Link to the frontend repository - https://github.com/franfran20/tell_your_tale_project
 4. The link to the live demo -
 5. The link to the youtube video showcasing tell your tale -
