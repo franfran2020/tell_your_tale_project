@@ -39,4 +39,4 @@ Here are some of the links that you might find helpful when exploring tell your 
 2. The Link to the subgraph repository - https://github.com/franfran20/tell_your_tale_subgraph
 3. The Link to the frontend repository - https://github.com/franfran20/tell_your_tale_project
 4. The link to the live demo - https://polished-rain-2228.on.fleek.co/
-5. The link to the youtube video showcasing tell your tale - 
+5. The link to the youtube video showcasing tell your tale - https://youtu.be/OZ5weB44wQo
