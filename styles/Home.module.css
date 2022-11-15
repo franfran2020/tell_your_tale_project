@@ -4,6 +4,7 @@
 
 .heroSection {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .heroSection .left {
@@ -13,33 +14,12 @@
   width: 50%;
 }
 
-.heroSection .left div {
-  display: flex;
-  flex-direction: column;
-}
-
-.heroSection .left div h2 {
-  font-size: 40px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.heroSection .left div p {
-  font-size: 50px;
-  text-align: right;
-  color: #00a7e1;
-  margin: 0;
-  padding: 0;
-}
-
 .heroSection .right {
   display: flex;
   flex-direction: column;
   padding: 20px;
   align-items: center;
   justify-content: center;
-  width: 50%;
 }
 
 .heroSection .right .one {
@@ -47,15 +27,16 @@
 }
 
 .heroImage {
-  margin-top: 25px;
-  margin-left: 200px;
-  width: 60%;
+  width: 90%;
   height: auto;
 }
 
 .heroSection .right {
   justify-content: flex-start;
-  margin-top: 100px;
+  margin-top: 50px;
+  color: #000000;
+  font-size: 15px;
+  width: 50%;
 }
 
 .heroSection .right .one {
@@ -72,20 +53,22 @@
 
 .heroButton {
   text-decoration: none;
-  background-color: #003459;
+  background-color: #18a921;
+  color: #ffffff;
   padding: 10px 15px;
   font-size: 18px;
-  color: white;
+  color: 18a921;
   border-radius: 3px;
 }
 
 .heroButton:hover {
-  background-color: #00a7e1;
+  background-color: rgb(0, 0, 0);
+  color: rgb(67, 67, 67);
 }
 
 .newTalesSection {
   /* margin-top: 80px; */
-  background-color: #00171f;
+  background-color: #111314;
   width: 100%;
   padding-bottom: 70px;
 }
@@ -106,7 +89,7 @@
 
 .titleName .viewAllNewTalesLink {
   font-size: 20px;
-  color: #00a7e1;
+  color: #18a921;
   text-decoration: none;
 }
 
@@ -132,13 +115,13 @@
 }
 
 .leftHeader {
-  color: #00a7e1;
+  color: #18a921;
   font-size: 45px;
   font-weight: 800;
 }
 
 .leftButton {
-  background-color: #003459;
+  background-color: #18a921;
   padding: 10px 18px;
   border-radius: 3px;
   font-size: 24px;
@@ -155,7 +138,7 @@
 }
 
 .rightButton {
-  background-color: #00a7e1;
+  background-color: #18a921;
   padding: 10px 18px;
   border-radius: 3px;
   font-size: 24px;

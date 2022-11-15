@@ -83,7 +83,7 @@ function CreateTale() {
           Pick the genre your tale falls into, if none go with others
         </h5>
         <p>
-          Selected Genre:{" "}
+          Selected Genre:
           <span style={{ color: "black" }}>{GENRE_DETAILS[selectedGenre]}</span>
         </p>
         <div className={styles.buttonHolder}>
@@ -135,7 +135,7 @@ function CreateTale() {
 
       <div className={styles.taleNameAndDescriptionContainer}>
         <h3>
-          <span style={{ color: "#007ea7" }}>2. </span>
+          <span style={{ color: "#1a1a1a" }}>2. </span>
           Give Your Tale A Name and A Description.
         </h3>
 

@@ -48,15 +48,6 @@ function TaleDetail() {
     },
   });
 
-  // const { data, error, fetch, isFetching, isLoading } = useWeb3ExecuteFunction({
-  //   abi: TALE_MANAGER_ABI,
-  //   contractAddress: TALE_MANAGER_CONTRACT_ADDRESS,
-  //   functionName: "mintChapter",
-  //   params: {
-  //     _authorName: userAuthorName,
-  //   },
-  // });
-
   async function updateUIValues() {
     const taleDetailsFromCall = await getTaleDetails();
     const taleCurrentChapter = (await getCurrentChapter()).toString();
@@ -89,23 +80,23 @@ function TaleDetail() {
 
             <div className="taleDetaillsWriting">
               <h2>
-                <span style={{ color: "black" }}>Name: </span>
+                <span style={{ color: "white" }}>Tale Name: </span>
                 {taleDetailsState[0]}
               </h2>
               <h3>
                 {" "}
-                <span style={{ color: "black" }}>Author: </span>
+                <span style={{ color: "#18a921" }}>Author: </span>
                 {taleDetailsState[1]}
               </h3>
               <h4>
-                <span style={{ color: "black" }}>Genre: </span>
+                <span style={{ color: "white" }}>Genre: </span>
                 {GENRE_DETAILS[taleDetailsState["Genre"]]}
               </h4>
 
               <h5>Description</h5>
               <p>{taleDetailsState[3]}</p>
 
-              <h6>Chapters Released This Far: </h6>
+              <h6>Current Chapter</h6>
               {currentChapter && <p>{currentChapter}</p>}
             </div>
           </div>
@@ -128,6 +119,8 @@ function TaleDetail() {
                 display: "flex",
                 flexDirection: "row",
                 padding: "30px 40px",
+                backgroundColor: "#E1E1E1",
+                marginTop: "60px",
               }}
             >
               <img
@@ -136,6 +129,7 @@ function TaleDetail() {
               />
               <Link
                 href={`/chapters/${taleAddress}/${selectedChapterNumber}`}
+                className="selectedChapter"
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -145,18 +139,40 @@ function TaleDetail() {
                 }}
               >
                 <h2>Chapter {selectedChapterNumber}</h2>
-                <h4>{chapterDetails[0]}</h4>
-                <p>{chapterDetails[1]}</p>
+                <h4 style={{ fontSize: "20px", color: "#18a921" }}>
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      color: "black",
+                      paddingRight: "8px",
+                    }}
+                  >
+                    Title:
+                  </span>
+                  {chapterDetails[0]}
+                </h4>
+                <p style={{ fontSize: "20px", color: "#18a921" }}>
+                  <span
+                    style={{
+                      fontWeight: "bold",
+                      color: "black",
+                      paddingRight: "8px",
+                    }}
+                  >
+                    Description:
+                  </span>
+                  {chapterDetails[1]}
+                </p>
               </Link>
             </div>
           ) : (
             <p style={{ textAlign: "center", fontSize: "25px" }}>
-              Chapter Does Not Exist!
+              Select A chapter
             </p>
           )}
         </>
       ) : (
-        "Connect Wallet.."
+        <div className="loader"></div>
       )}
     </>
   );

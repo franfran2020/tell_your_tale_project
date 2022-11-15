@@ -38,8 +38,8 @@ function Register() {
     <div className={styles.registerContainer}>
       <h2 className={styles.registerHeader}>Register As An Author</h2>
       <div className={styles.registerSignUpSection}>
-        <h4>Choose Your Author Name</h4>
-        <p>Author Name: </p>
+        <h4>Whats Your Author Name Gonna Be?</h4>
+
         <input
           onChange={(e) => {
             setUserAuthorName(e.target.value);
@@ -52,10 +52,6 @@ function Register() {
         )}
         {error && handleError(error)}
       </div>
-      <p className={styles.registerNote}>
-        <span>NOTE:</span> Please be aware that the connected address will be
-        associated with your specified author name
-      </p>
     </div>
   );
 }

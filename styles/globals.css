@@ -56,16 +56,16 @@ body {
 .dropChapterContainer h2 {
   font-size: 40px;
   font-weight: 700;
-  color: #00a7e1;
+  color: #111111;
 }
 
 .dropChapterContainer h3 {
-  color: #003459;
+  color: #18a921;
   font-size: 25px;
 }
 
 .dropChapterContainer span {
-  color: #007ea7;
+  color: #18a921;
 }
 
 .dropChapterContainer input {
@@ -89,7 +89,7 @@ body {
 }
 
 .uploadButton {
-  background-color: #003459;
+  background-color: #18a921;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -99,11 +99,11 @@ body {
 }
 
 .uploadButton:hover {
-  background-color: #00a7e1;
+  background-color: #18a921;
 }
 
 .dropChapterButton {
-  background-color: #00a7e1;
+  background-color: #18a921;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -113,14 +113,16 @@ body {
 }
 
 .dropChapterButton:hover {
-  background-color: #003459;
+  background-color: #18a921;
 }
 
 .taleDetailsContainer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  background-color: #121212;
 }
 
 .taleDetailsStateImage {
@@ -130,37 +132,77 @@ body {
 }
 
 .taleDetaillsWriting h2 {
-  color: #00a7e1;
-  font-size: 30px;
+  color: #18a921;
+  font-size: 40px;
   font-weight: 600;
+  margin: 3px 0px;
 }
 
 .taleDetaillsWriting h3 {
-  color: #004258;
+  color: #ffffff;
   font-size: 20px;
+  margin: 12px 0px;
 }
 
 .taleDetaillsWriting h4 {
-  color: #00171f;
+  color: #18a921;
   font-size: 18px;
   font-weight: 500;
+  margin: 3px 0px;
+}
+
+.taleDetaillsWriting h5 {
+  color: #18a921;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.taleDetaillsWriting h6 {
+  color: #18a921;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.taleDetaillsWriting p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 3px 0px;
+}
+
+.getChapterFromNumber h2 {
+  text-align: center;
+  color: #0c0c0c;
+  font-size: 38px;
+}
+
+.selectedChapter {
+  display: flex;
+  flex-direction: column;
+}
+
+.selectedChapter h2 {
+  font-size: 40px;
+  margin: 3px 0px;
+}
+
+.selectedChapter h4 {
+  margin: 3px 0px;
 }
 
 .taleDetaillsWriting button {
   /* display: block; */
-  background-color: #004258;
+  background-color: #18a921;
   color: white;
   padding: 20px;
   border-radius: 3px;
   border: none;
   font-size: 22px;
   font-weight: 400;
-}
-
-.getChapterFromNumber h2 {
-  text-align: center;
-  color: #007ea7;
-  font-size: 38px;
 }
 
 .getChapterFromNumberHeader {
@@ -182,8 +224,8 @@ body {
 
 .getChapterFromNumberHeader button {
   border: none;
-  background-color: #00a7e1;
-  color: white;
+  background-color: #18a921;
+  color: rgb(19, 19, 19);
   padding: 12px 22px;
   margin-top: 10px;
   display: block;
@@ -192,12 +234,12 @@ body {
   border-radius: 2px;
 }
 .getChapterFromNumberHeader button:hover {
-  background-color: #003459;
+  background-color: #18a921;
 }
 
 .mintChapterButton {
   border: none;
-  background-color: #00a7e1;
+  background-color: #18a921;
   color: white;
   padding: 12px 22px;
   margin-top: 10px;
@@ -209,7 +251,7 @@ body {
 }
 
 .mintChapterButton:hover {
-  background-color: #04789f;
+  background-color: #0d4d11;
 }
 
 .viewChapterButton {
@@ -226,5 +268,24 @@ body {
 }
 
 .viewChapterButton:hover {
-  background-color: #007ea7;
+  background-color: #0e4912;
+}
+
+.loader {
+  border: 10px solid #151515; /* Light grey */
+  border-top: 10px solid #18a921; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto auto auto auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -22,6 +22,15 @@ Authors' tales are stored on the decentralized IPFS storage infrastructure rathe
 
 Since the user stories are kept on IPFS, a global public storage network, they can be accessed by anybody. So how can the author protect the content of the story from readers who aren't paying for access? Here, we employ threshold cryptography and decentralized encryption through the LIT protocol, making care to encrypt your story before posting it on IPFS and limiting access to the chapter's content to people who have minted it.
 
+# Possible Improvements
+
+The following improvements weren't made because of lack of time for the hackathon.
+
+- Support for image encryption
+- Better Formatting for tales
+- Allowing Authors withdraw from the client
+- More Flexibility when selecting genres
+
 # Links
 
 Here are some of the links that you might find helpful when exploring tell your tale

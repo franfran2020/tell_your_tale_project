@@ -251,7 +251,7 @@ function DropChapter() {
         }}
       />
 
-      <h4 style={{ color: "#00A7E1" }}>2. Drop Your Chapter Description</h4>
+      <h4>2. Drop Your Chapter Description</h4>
       <p>Description:</p>
       <textarea
         onChange={(e) => {
@@ -275,7 +275,7 @@ function DropChapter() {
         }}
       />
 
-      <h4 style={{ color: "#00A7E1" }}>3. Encrypt and Upload Your Tale</h4>
+      <h4>3. Encrypt and Upload Your Tale</h4>
       <p>Tale tale write-up:</p>
       <textarea
         onChange={(e) => {

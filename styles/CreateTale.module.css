@@ -12,7 +12,7 @@
 .selectGenreContainer p {
   font-size: 30px;
   font-weight: 600;
-  color: #007ea7;
+  color: #18a921;
 }
 
 .selectGenreContainer p span {
@@ -34,7 +34,7 @@
 }
 
 .buttonHolder button {
-  background-color: #007ea7;
+  background-color: #18a921;
   color: white;
   width: 150px;
   border: none;
@@ -86,7 +86,7 @@
 
 .taleNameAndDescriptionContainer button {
   width: 150px;
-  background-color: #007ea7;
+  background-color: #18a921;
   color: white;
   border: none;
   font-size: 22px;

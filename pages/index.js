@@ -24,16 +24,49 @@ export default function Home() {
 
   return (
     <div className={styles.HomeContainer}>
-      <div className={styles.heroSection}>
-        <div className={styles.left}>
-          <div>
-            <h2>Welcome to....</h2>
-            <p>Tell Your Tale</p>
-          </div>
-          <Link href="/">
-            <img src="/open-doodles-reading.png" className={styles.heroImage} />
+      <div className={styles.newTalesSection}>
+        <div className={styles.titleName}>
+          <h3>New Tales</h3>
+          <Link href="/newTales" className={styles.viewAllNewTalesLink}>
+            View All &gt;
           </Link>
         </div>
+
+        <div className={styles.taleBoxContainer}>
+          {data ? (
+            data.taleEntities.map(
+              ({
+                author,
+                imageCover,
+                name,
+                timeCreated,
+                genre,
+                taleContract,
+                creator,
+              }) => {
+                return (
+                  <TaleBox
+                    key={taleContract}
+                    imageLink={imageCover}
+                    title={name}
+                    author={author}
+                    genre={genre}
+                    taleContract={taleContract}
+                  />
+                );
+              }
+            )
+          ) : loading ? (
+            <div className="loader"></div>
+          ) : error ? (
+            "Error!!"
+          ) : (
+            "Unkown"
+          )}
+        </div>
+      </div>
+
+      <div className={styles.heroSection}>
         <div className={styles.right}>
           <p className={styles.one}>
             Tell your tale allows users to write stories and earn from these
@@ -52,62 +85,9 @@ export default function Home() {
             Register As An Author
           </Link>
         </div>
-      </div>
-
-      <div className={styles.newTalesSection}>
-        <div className={styles.titleName}>
-          <h3>New Tales</h3>
-          <Link href="/newTales" className={styles.viewAllNewTalesLink}>
-            View All &gt;
-          </Link>
-        </div>
-
-        <div className={styles.taleBoxContainer}>
-          {data
-            ? data.taleEntities.map(
-                ({
-                  author,
-                  imageCover,
-                  name,
-                  timeCreated,
-                  genre,
-                  taleContract,
-                  creator,
-                }) => {
-                  return (
-                    <TaleBox
-                      key={taleContract}
-                      imageLink={imageCover}
-                      title={name}
-                      author={author}
-                      genre={genre}
-                      taleContract={taleContract}
-                    />
-                  );
-                }
-              )
-            : loading
-            ? "Loading..."
-            : error
-            ? "Error!!"
-            : "Unkown"}
-        </div>
-      </div>
-
-      <div className={styles.QuestionSection}>
-        <div className={styles.leftHeaderAndButtonContainer}>
-          <h3 className={styles.leftHeader}>WanT To cReAtE yoUr fIrST tALe?</h3>
-          <Link href="/register" className={styles.leftButton}>
-            Register as an author
-          </Link>
-        </div>
-
-        <div className={styles.rightHeaderAndButtonContainer}>
-          <h3 className={styles.rightHeader}>
-            Already An Author? DrOp A nEW TalE!
-          </h3>
-          <Link href="/createTale" className={styles.rightButton}>
-            Create Tale
+        <div className={styles.left}>
+          <Link href="/">
+            <img src="/illustration.png" className={styles.heroImage} />
           </Link>
         </div>
       </div>

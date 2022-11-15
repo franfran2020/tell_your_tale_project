@@ -52,8 +52,6 @@ function ChapterPage() {
     msgValue: cost,
   });
 
-  console.log(chapterDetails);
-
   const chain = "mumbai";
   let client;
 
@@ -61,24 +59,18 @@ function ChapterPage() {
     client = new LitJsSdk.LitNodeClient();
     await client.connect();
     setLitNodeClient(client);
-    console.log("Lit client:", client);
   }
 
   async function decryptMessage(taleLink, encodedTaleString) {
     if (!window.litNodeClient) {
       await connectLit();
     }
-    console.log("decrypting message....");
     // const symmetricKey = await getEncryptedKey(messageLink);
 
     const data = await fetch(taleLink);
-    console.log("mlink", taleLink);
     const dataOnIpfs = JSON.parse(await data.text());
 
-    console.log("getting all the data..");
-    console.log("Data on ipfs", dataOnIpfs);
     const evmContractConditions = dataOnIpfs.evmContractConditions;
-    console.log("evm contract cond", evmContractConditions);
 
     const authSig = await LitJsSdk.checkAndSignAuthMessage({ chain });
 
@@ -89,17 +81,16 @@ function ChapterPage() {
       chain,
       authSig,
     };
-    console.log("encrypted key", encryptedSymmetricKey);
     // symmetric key
     const symmetricKey = await litNodeClient.getEncryptionKey(
       getEncryptionKeyParams
     );
-    console.log("Gotten key", symmetricKey);
     const decryptedString = await LitJsSdk.decryptString(
       new Blob([hexStringToArrayBuffer(encodedTaleString)]),
       symmetricKey
     );
-    console.log("decryptedString", decryptedString);
+
+    console.log("", decryptedString);
     setEncryptedMessage(decryptedString);
   }
 
@@ -136,7 +127,6 @@ function ChapterPage() {
   const fetchDecryptedMessage = async (encryptedLink) => {
     const res = await fetch(encryptedLink);
     const data = await res.json();
-    console.log(data);
     const encryptedString = data.encryptedString;
     return encryptedString;
   };
@@ -157,11 +147,12 @@ function ChapterPage() {
           <h2
             style={{
               textAlign: "center",
-              color: "#00A7E1",
+              color: "#18a921",
               fontSize: "40px",
               margin: "8px 0px",
             }}
           >
+            <span>Chapter Name: </span>
             {chapterDetails[0]}
           </h2>
           <h3
@@ -172,6 +163,7 @@ function ChapterPage() {
               margin: "8px 0px",
             }}
           >
+            <span>Author: </span>
             {chapterDetails[4]}
           </h3>
           <h4
@@ -182,7 +174,7 @@ function ChapterPage() {
               margin: "8px 0px",
             }}
           >
-            {chapterNumber}
+            <span>Chapter</span> {chapterNumber}
           </h4>
           <h5
             style={{
@@ -193,7 +185,8 @@ function ChapterPage() {
               margin: "8px 0px",
             }}
           >
-            Cost {chapterDetails["costInUsd"].toString()}$ in MATIC
+            Cost {parseFloat(chapterDetails["costInUsd"].toString() / 10 ** 8)}$
+            in MATIC
           </h5>
 
           <div

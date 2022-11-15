@@ -43,17 +43,6 @@ function Layout({ children }) {
         </div>
       </nav>
       <div className={styles.childrenContainer}>{children}</div>
-      <footer className={styles.footer}>
-        <div className={styles.footerFirstDiv}>
-          <h5>Tell Your Tale</h5>
-          <p>Where the greatest tales are told.....</p>
-        </div>
-        <div className={styles.footerSecondDiv}>
-          <p className={styles.footerLinkOne}>Faqs</p>
-          <p className={styles.footerLinkTwo}>News and Events</p>
-          <p className={styles.footerLinkThree}>Feedback</p>
-        </div>
-      </footer>
     </div>
   );
 }
